@@ -37,14 +37,10 @@ const Navbar = () => {
               src="https://res.cloudinary.com/dvybb2xnc/image/upload/f_auto,q_auto,w_200,h_200/v1752659104/PMI_Brown_ooq0sv" 
               alt="PMI Advertising Logo" 
               className="navbar-logo-image"
-              style={{ display: logoLoaded ? 'block' : 'none' }}
               onLoad={() => setLogoLoaded(true)}
               onError={() => setLogoLoaded(false)}
             />
-            <h2 
-              className="navbar-logo-text"
-              style={{ display: logoLoaded ? 'none' : 'block' }}
-            >
+            <h2 className="navbar-logo-text">
               PMI Advertising
             </h2>
           </div>
