@@ -5,7 +5,6 @@ import './Navbar.css';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [logoLoaded, setLogoLoaded] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -37,8 +36,6 @@ const Navbar = () => {
               src="https://res.cloudinary.com/dvybb2xnc/image/upload/f_auto,q_auto,w_200,h_200/v1752659104/PMI_Brown_ooq0sv" 
               alt="PMI Advertising Logo" 
               className="navbar-logo-image"
-              onLoad={() => setLogoLoaded(true)}
-              onError={() => setLogoLoaded(false)}
             />
             <h2 className="navbar-logo-text">
               PMI Advertising
